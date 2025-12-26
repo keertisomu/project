@@ -1,0 +1,81 @@
+{
+  "personal": {
+    "name": "Keerti Somasundaram",
+    "title": "Software Engineer & Technology Specialist", 
+    "email": "maverick.somu@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/keerti-somasundaram-17199912",
+    "website": "http://keertisomu.blogspot.com",
+    "location": "Australia",
+    "summary": "Versatile software engineer with a passion for building scalable applications and innovative solutions. Specialized in full-stack development with expertise in modern web technologies."
+  },
+  "skills": [
+    { "name": "JavaScript", "years": 8, "category": "Programming" },
+    { "name": "Python", "years": 6, "category": "Programming" },
+    { "name": "React", "years": 5, "category": "Frontend" },
+    { "name": "Node.js", "years": 5, "category": "Backend" },
+    { "name": "TypeScript", "years": 4, "category": "Programming" },
+    { "name": "SQL", "years": 7, "category": "Database" },
+    { "name": "AWS", "years": 4, "category": "Cloud" },
+    { "name": "Docker", "years": 3, "category": "DevOps" },
+    { "name": "Git", "years": 8, "category": "Tools" },
+    { "name": "MongoDB", "years": 4, "category": "Database" },
+    { "name": "Express.js", "years": 5, "category": "Backend" },
+    { "name": "Vue.js", "years": 3, "category": "Frontend" }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Staff Engineer",
+      "company": "Nintex",
+      "duration": "2021 - Present",
+      "description": "Leading Front-end development for data storage platform for Nintex Workflow",
+      "technologies": ["React", "NET", "C#", "Azure", "Microsoft Sql"],
+      "logo": "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "Senior Software Engineer",
+      "company": "Cyara",
+      "duration": "2019 - 2021",
+      "description": "Full stack engineer developing and enhancing Cyara's customer portal.",
+      "technologies": ["Angular", "ASP.NET MVC", "NET", "C#", "Microsoft Sql"],
+      "logo": "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Technical Lead",
+      "company": "Wipro",
+      "duration": "2017 - 2019",
+      "description": "Leading a team of engineers to enhance and maintain PowerCors domain applications",
+      "technologies": ["JavaScript", "NET"],
+      "logo": "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    },
+    {
+      "id": 4,
+      "title": "Technical Architect",
+      "company": "Infosys",
+      "duration": "2006 - 2017",
+      "description": "Led architecture and development for Schlumberger's enterprise platforms at Infosys over 11+ years. Specialized in Ocean for Petrel plugin development and built mission-critical web applications using .NET, WPF, Silverlight, and GIS technologies. Mentored teams and drove technical transformation initiatives across multiple business units.",
+      "technologies": ["HTML/CSS", "JavaScript", "PHP", "Git"],
+      "logo": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with real-time inventory management",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "company": "Tech Solutions Inc",
+      "image": "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Analytics Dashboard",
+      "description": "Real-time data visualization and reporting platform",
+      "technologies": ["Vue.js", "Python", "D3.js", "PostgreSQL"],
+      "company": "Digital Innovations LLC",
+      "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop"
+    }   
+  ]
+}

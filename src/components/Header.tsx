@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Globe, Linkedin, Sun, Moon } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   personal: {
@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ personal, theme, onToggleTheme }) => {
         </button>
       </div>
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
         <div className="mb-8">
           {/* Profile Photo */}
           <div className="relative inline-block mb-6">
@@ -55,11 +55,11 @@ const Header: React.FC<HeaderProps> = ({ personal, theme, onToggleTheme }) => {
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
           </div>
-          <div className="inline-block bg-white/80 dark:bg-[#26262b] px-8 py-4 rounded-2xl shadow-2xl backdrop-blur-sm border border-slate-200 dark:border-slate-700">
+          <div className="inline-block bg-white/80 dark:bg-[#26262b] px-10 py-4 rounded-2xl shadow-2xl backdrop-blur-sm border border-slate-200 dark:border-slate-700">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-2 tracking-tight">
               {personal.name}
             </h1>
-            <p className="text-lg md:text-2xl text-slate-700 dark:text-purple-200 font-medium tracking-wide">
+            <p className="text-lg md:text-2xl text-slate-700 dark:text-purple-200 font-medium tracking-wide lg:whitespace-nowrap">
               {personal.title}
             </p>
           </div>
@@ -90,8 +90,8 @@ const Header: React.FC<HeaderProps> = ({ personal, theme, onToggleTheme }) => {
         </div>
 
         {/* Location Badge */}
-        <div className="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600/80 to-indigo-600/80 backdrop-blur-sm text-white px-6 py-3 rounded-full shadow-lg">
-          <MapPin className="w-4 h-4" />
+        <div className="mt-8 inline-flex items-center gap-2 bg-white/90 dark:bg-[#26262b] backdrop-blur-sm text-[#6867b5] px-6 py-3 rounded-full shadow-lg border border-[#6867b5]">
+          <MapPin className="w-4 h-4 text-[#6867b5]" />
           <span className="text-sm font-medium">Based in Melbourne, Australia</span>
         </div>
       </div>

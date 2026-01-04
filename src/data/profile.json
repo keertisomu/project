@@ -9,18 +9,20 @@
     "summary": "Versatile software engineer with a passion for building scalable applications and innovative solutions. Specialized in full-stack development with expertise in modern web technologies."
   },
   "skills": [
-    { "name": "JavaScript", "years": 8, "category": "Programming" },
-    { "name": "Python", "years": 6, "category": "Programming" },
+    { "name": "Scrum", "years": 8, "category": "Engineering Management" },
+    { "name": "Cross team collaboration", "years": 8, "category": "Engineering Management" },
+    { "name": "Mentoring & Coaching", "years": 6, "category": "Engineering Management" },
+    { "name": "Agile Methodologies", "years": 8, "category": "Engineering Management" },
+    { "name": "JavaScript", "years": 8, "category": "Frontend" },
     { "name": "React", "years": 5, "category": "Frontend" },
-    { "name": "Node.js", "years": 5, "category": "Backend" },
-    { "name": "TypeScript", "years": 4, "category": "Programming" },
-    { "name": "SQL", "years": 7, "category": "Database" },
-    { "name": "AWS", "years": 4, "category": "Cloud" },
-    { "name": "Docker", "years": 3, "category": "DevOps" },
-    { "name": "Git", "years": 8, "category": "Tools" },
-    { "name": "MongoDB", "years": 4, "category": "Database" },
-    { "name": "Express.js", "years": 5, "category": "Backend" },
-    { "name": "Vue.js", "years": 3, "category": "Frontend" }
+    { "name": "TypeScript", "years": 4, "category": "Frontend" },    
+    { "name": "Rest APIs", "years": 5, "category": "Backend" },    
+    { "name": ".Net", "years": 5, "category": "Backend" },    
+    { "name": "Node JS", "years": 5, "category": "Backend" },    
+    { "name": "Nest Js", "years": 7, "category": "Backend" },
+    { "name": "MS SQL", "years": 7, "category": "Backend" },    
+    { "name": "Docker", "years": 3, "category": "Cloud & DevOps" },
+    { "name": "Azure", "years": 3, "category": "Cloud & DevOps" }
   ],
   "experiences": [
     {

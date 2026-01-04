@@ -43,7 +43,7 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
           
           {/* Timeline items */}
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {experiences.map((exp) => (
               <div key={exp.id} className="relative flex items-start group">
                 {/* Timeline dot */}
                 <div className="absolute left-6 w-4 h-4 bg-slate-900 border-4 border-purple-400 rounded-full group-hover:border-indigo-300 transition-colors duration-300 z-10"></div>
@@ -61,12 +61,12 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
                           href={exp.companyUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center px-3 py-1 rounded-full bg-purple-950/60 text-purple-200 text-sm font-semibold mb-2 border border-purple-500/70 hover:bg-purple-900/80 hover:text-white transition-colors duration-200"
+                          className="inline-flex items-center px-3 py-1 rounded-full bg-[#6867b5] text-white text-sm font-semibold mb-2 border border-[#6867b5] hover:bg-[#5654a0] transition-colors duration-200"
                         >
                           {exp.company}
                         </a>
                       ) : (
-                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-purple-950/60 text-purple-200 text-sm font-semibold mb-2 border border-purple-500/70">
+                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#6867b5] text-white text-sm font-semibold mb-2 border border-[#6867b5]">
                           {exp.company}
                         </div>
                       )}
@@ -95,7 +95,7 @@ const Experience: React.FC<ExperienceProps> = ({ experiences }) => {
                       {exp.technologies.map(tech => (
                         <span 
                           key={tech}
-                          className="px-3 py-1 bg-gradient-to-r from-purple-900 to-indigo-900 text-purple-200 text-sm rounded-full font-medium border border-purple-700 hover:from-purple-800 hover:to-indigo-800 transition-colors duration-200"
+                          className="px-3 py-1 bg-[#6867b5] text-white text-sm rounded-full font-medium border border-[#6867b5] hover:bg-[#5654a0] transition-colors duration-200"
                         >
                           {tech}
                         </span>

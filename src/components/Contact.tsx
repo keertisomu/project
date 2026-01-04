@@ -28,7 +28,7 @@ const Contact: React.FC<ContactProps> = ({ email }) => {
           
           <a 
             href={`mailto:${email}`}
-            className="inline-flex items-center gap-2 bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-2 bg-[#6867b5] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#5654a0] transition-colors duration-200 shadow-sm hover:shadow-md"
           >
             <Send className="w-5 h-5" />
             Send me an email

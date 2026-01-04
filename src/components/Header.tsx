@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Globe, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Globe, Linkedin, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   personal: {
@@ -11,24 +11,38 @@ interface HeaderProps {
     location: string;
     summary: string;
   };
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ personal }) => {
+const Header: React.FC<HeaderProps> = ({ personal, theme, onToggleTheme }) => {
   return (
-    <header className="relative min-h-[600px] py-16 px-4 overflow-hidden">
-      {/* Melbourne Background */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.pexels.com/photos/1878293/pexels-photo-1878293.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-          alt="Melbourne Skyline"
-          className="w-full h-full object-cover"
-        />
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-slate-800/80 to-blue-800/85"></div>
-        {/* Additional overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/20"></div>
+	<header className="relative min-h-[600px] py-16 px-4 overflow-hidden">
+      {/* Theme toggle - top right of header */}
+      <div className="absolute top-6 right-6 z-20">
+        <button
+          type="button"
+          onClick={onToggleTheme}
+          className={
+            `inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium shadow-lg border transition-colors duration-200 ` +
+            (theme === 'dark'
+              ? 'bg-white/80 hover:bg-white text-slate-900 border-slate-200'
+              : 'bg-black/40 hover:bg-black/60 text-gray-100 border-white/10')
+          }
+        >
+          {theme === 'dark' ? (
+            <>
+              <Sun className="w-3 h-3" />
+              <span>Light mode</span>
+            </>
+          ) : (
+            <>
+              <Moon className="w-3 h-3" />
+              <span>Dark mode</span>
+            </>
+          )}
+        </button>
       </div>
-
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <div className="mb-8">
@@ -41,23 +55,24 @@ const Header: React.FC<HeaderProps> = ({ personal }) => {
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
           </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 drop-shadow-lg">
-            {personal.name}
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 font-light drop-shadow-md">
-            {personal.title}
-          </p>
+          <div className="inline-block bg-white/80 dark:bg-[#26262b] px-8 py-4 rounded-2xl shadow-2xl backdrop-blur-sm border border-slate-200 dark:border-slate-700">
+            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-2 tracking-tight">
+              {personal.name}
+            </h1>
+            <p className="text-lg md:text-2xl text-slate-700 dark:text-purple-200 font-medium tracking-wide">
+              {personal.title}
+            </p>
+          </div>
         </div>
         
-        <p className="text-lg text-gray-100 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+        <p className="text-base md:text-lg text-slate-800 dark:text-slate-50 mb-8 max-w-2xl mx-auto leading-relaxed bg-white/80 dark:bg-[#26262b] px-6 py-4 rounded-2xl backdrop-blur-sm border border-slate-200 dark:border-slate-700">
           {personal.summary}
         </p>
         
-        <div className="flex flex-wrap justify-center gap-6 text-gray-100">
+        <div className="flex flex-wrap justify-center gap-6 text-slate-800 dark:text-gray-100">
           <a 
             href={`mailto:${personal.email}`}
-            className="flex items-center gap-2 hover:text-blue-300 transition-colors duration-200 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20"
+            className="flex items-center gap-2 transition-colors duration-200 bg-white/70 hover:bg-white text-slate-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-100 backdrop-blur-sm px-4 py-2 rounded-lg"
           >
             <Mail className="w-5 h-5" />
             <span>{personal.email}</span>
@@ -67,30 +82,15 @@ const Header: React.FC<HeaderProps> = ({ personal }) => {
             href={personal.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-blue-300 transition-colors duration-200 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20"
+            className="flex items-center gap-2 transition-colors duration-200 bg-white/70 hover:bg-white text-slate-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-100 backdrop-blur-sm px-4 py-2 rounded-lg"
           >
             <Linkedin className="w-5 h-5" />
             <span>LinkedIn</span>
-          </a>
-          
-          <a 
-            href={personal.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-blue-300 transition-colors duration-200 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20"
-          >
-            <Globe className="w-5 h-5" />
-            <span>Blog</span>
-          </a>
-          
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-            <MapPin className="w-5 h-5" />
-            <span>{personal.location}</span>
-          </div>
+          </a>         
         </div>
 
-        {/* Melbourne Badge */}
-        <div className="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600/80 to-blue-700/80 backdrop-blur-sm text-white px-6 py-3 rounded-full shadow-lg">
+        {/* Location Badge */}
+        <div className="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-purple-600/80 to-indigo-600/80 backdrop-blur-sm text-white px-6 py-3 rounded-full shadow-lg">
           <MapPin className="w-4 h-4" />
           <span className="text-sm font-medium">Based in Melbourne, Australia</span>
         </div>

@@ -21,7 +21,7 @@ interface SkillsProps {
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const getSkillIcon = (skillName: string, category: string) => {
-    const iconProps = { className: "w-8 h-8 text-blue-600" };
+    const iconProps = { className: "w-8 h-8 text-purple-300" };
     
     // Programming languages
     if (['JavaScript', 'Python', 'TypeScript'].includes(skillName)) {
@@ -69,9 +69,9 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   };
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 bg-transparent">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-50 text-center mb-12">
           Skills & Expertise
         </h2>
         
@@ -81,12 +81,12 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             .map(skill => (
               <div 
                 key={skill.name} 
-                className="relative group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+                className="relative group bg-[#f5f0e0] dark:bg-slate-900/70 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200 dark:border-purple-800/50"
               >
                 {/* Years indicator - top right corner */}
                 <div className="absolute top-3 right-3 group">
-                  <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center cursor-pointer">
-                    <Calendar className="w-3 h-3 text-blue-600" />
+                  <div className="w-6 h-6 bg-purple-900/60 rounded-full flex items-center justify-center cursor-pointer border border-purple-500/60">
+                    <Calendar className="w-3 h-3 text-purple-200" />
                   </div>
                   {/* Tooltip */}
                   <div className="absolute -top-8 right-0 bg-gray-900 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap z-10">
@@ -97,21 +97,21 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
 
                 {/* Skill content */}
                 <div className="flex flex-col items-center text-center">
-                  <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+                  <div className="mb-4 p-3 bg-purple-900/40 rounded-lg">
                     {getSkillIcon(skill.name, skill.category)}
                   </div>
                   
-                  <h3 className="font-semibold text-gray-900 text-sm mb-2">
+                  <h3 className="font-semibold text-slate-900 dark:text-slate-50 text-sm mb-2">
                     {skill.name}
                   </h3>
                   
-                  <span className="text-xs text-gray-500 px-2 py-1 bg-gray-100 rounded-full">
+                  <span className="text-xs text-slate-700 bg-slate-200 dark:text-slate-300 dark:bg-slate-800 px-2 py-1 rounded-full">
                     {skill.category}
                   </span>
                 </div>
 
                 {/* Hover effect overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-indigo-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             ))}
         </div>

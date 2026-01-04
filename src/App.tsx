@@ -24,6 +24,7 @@ interface ProfileData {
     id: number;
     title: string;
     company: string;
+    companyUrl?: string;
     duration: string;
     description: string;
     technologies: string[];
@@ -42,6 +43,12 @@ interface ProfileData {
 function App() {
   const [profileData, setProfileData] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof window === 'undefined') return 'dark';
+    const stored = window.localStorage.getItem('theme');
+    if (stored === 'light' || stored === 'dark') return stored;
+    return 'dark';
+  });
 
   useEffect(() => {
     const loadProfileData = async () => {
@@ -74,12 +81,23 @@ function App() {
     loadProfileData();
   }, []);
 
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const root = document.documentElement;
+    if (theme === 'dark') {
+      root.classList.add('dark');
+    } else {
+      root.classList.remove('dark');
+    }
+    window.localStorage.setItem('theme', theme);
+  }, [theme]);
+
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-[#fcf9ee] dark:bg-[#1c1c20]">
         <div className="text-center">
-          <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading profile...</p>
+          <div className="w-12 h-12 border-4 border-slate-800 dark:border-slate-200 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+          <p className="text-slate-700 dark:text-slate-200">Loading profile...</p>
         </div>
       </div>
     );
@@ -87,26 +105,32 @@ function App() {
 
   if (!profileData) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-[#fcf9ee] dark:bg-[#1c1c20]">
         <div className="text-center">
-          <p className="text-gray-600">Error loading profile data</p>
+          <p className="text-slate-700 dark:text-slate-200">Error loading profile data</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      <Header personal={profileData.personal} />
+    <div className="min-h-screen text-slate-900 dark:text-slate-100 transition-colors duration-300">
+      <Header
+        personal={profileData.personal}
+        theme={theme}
+        onToggleTheme={() =>
+          setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+        }
+      />
       <Skills skills={profileData.skills} />
       <Experience experiences={profileData.experiences} />
       <Projects projects={profileData.projects} />
       <Contact email={profileData.personal.email} />
       
-      <footer className="bg-gray-900 text-white py-8 px-4">
+      <footer className="bg-transparent text-slate-500 dark:text-slate-400 py-8 px-4 border-t border-slate-200 dark:border-slate-800">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-gray-400">
-            © 2025 {profileData.personal.name}. Built with React and Tailwind CSS.
+          <p>
+            © 2025 {profileData.personal.name}.
           </p>
         </div>
       </footer>

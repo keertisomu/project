@@ -9,10 +9,10 @@
     "summary": "Versatile software engineer with a passion for building scalable applications and innovative solutions. Specialized in full-stack development with expertise in modern web technologies."
   },
   "skills": [
-    { "name": "Scrum", "years": 8, "category": "Engineering Management" },
-    { "name": "Cross team collaboration", "years": 8, "category": "Engineering Management" },
-    { "name": "Mentoring & Coaching", "years": 6, "category": "Engineering Management" },
-    { "name": "Agile Methodologies", "years": 8, "category": "Engineering Management" },
+    { "name": "Scrum", "years": 2, "category": "Engineering Management" },
+    { "name": "Cross team collaboration", "years": 2, "category": "Engineering Management" },
+    { "name": "Mentoring & Coaching", "years": 1, "category": "Engineering Management" },
+    { "name": "Agile Methodologies", "years": 2, "category": "Engineering Management" },
     { "name": "JavaScript", "years": 8, "category": "Frontend" },
     { "name": "React", "years": 5, "category": "Frontend" },
     { "name": "TypeScript", "years": 4, "category": "Frontend" },    
@@ -30,9 +30,21 @@
       "title": "Staff Engineer",
       "company": "Nintex",
       "companyUrl": "https://www.nintex.com/",
-      "duration": "2021 - Present",
-      "description": "At Nintex, I serve as the lead front-end engineer for the Nintex Tables Project, where I steer large-scale feature development by collaborating with staff and principal engineers across multiple teams to define technical requirements and establish best practices for scalability and maintainability. I lead a team of three engineers in front-end development using React for a records management application, while also designing and developing an innovative AI Assistant framework using Langchain/Langgraph to enhance user experience in Nintex Workflow Cloud. My role encompasses full-stack responsibilities, including RESTful API development using .NET Core, and requires strong coordination with Product, UX, and Engineering Management stakeholders. I actively mentor junior front-end engineers on React and TypeScript best practices, while maintaining robust quality standards through comprehensive UI and API testing using Postman and Cypress, integrated into CI/CD pipelines via Azure DevOps. My technical expertise extends to Azure Cloud services including Azure Functions, Table/Blob Storage, and Azure Monitor (AppInsights), where I troubleshoot production issues and maintain system health through effective use of monitoring dashboards and metrics.",
-      "technologies": ["Typescript", "React", "JS", "NET", "C#", "Azure", "Microsoft Sql"],
+      "duration": "2021 – Present",
+      "scope": "Platform scope",
+      "tagline": "Building scalable data products and AI-assisted workflows",
+      "whatIOwned": [
+        "Front-end architecture for the Nintex Tables product, focusing on scalability and long-term maintainability",
+        "Design and development of an AI Assistant framework using LangChain and LangGraph",
+        "Technical alignment across Product, UX, and Engineering leadership"
+      ],
+      "impact": [
+        "Enabled large-scale feature delivery across multiple teams through shared front-end patterns",
+        "Improved user experience consistency across records management and workflow surfaces",
+        "Reduced production issues through improved observability and quality practices"
+      ],
+      "howIBuiltIt": ["React", "TypeScript", ".NET Core", "Azure Functions", "Blob/Table Storage", "Application Insights", "Cypress", "Postman", "Azure DevOps CI/CD", "Mentoring"],
+      "technicalDeepDive": "Served as lead front-end engineer for the Nintex Tables initiative, guiding architecture decisions and implementation strategies while mentoring a team of three engineers.\n\nDesigned and implemented an AI Assistant framework using LangChain and LangGraph, enabling intelligent, context-aware user interactions within Nintex Workflow Cloud.\n\nDelivered full-stack features including RESTful APIs built with .NET Core, collaborating closely with Product Managers, UX Designers, and Staff/Principal Engineers.\n\nEstablished and enforced quality standards through comprehensive UI and API testing using Cypress and Postman, integrated into CI/CD pipelines via Azure DevOps.\n\nActively monitored and troubleshot production systems using Azure Functions, Azure Storage, and Application Insights, leveraging dashboards and metrics to maintain system health and reliability.",
       "logo": "/Nintex_Logo.ico"
     },
     {
@@ -40,9 +52,21 @@
       "title": "Senior Software Engineer",
       "company": "Cyara",
       "companyUrl": "https://cyara.com/",
-      "duration": "2019 - 2021",
-      "description": "As a Senior Software Engineer at Cyara, I played a pivotal role in enhancing the reliability and performance of the company's customer-facing platform. I architected and implemented a high-availability solution for the main Portal by migrating the caching layer to Redis, significantly improving system resilience. I designed and developed a micro frontend application using Angular v9 that enabled customers to seamlessly export items from Cyara's Portal into HP Quality Centre ALM. My contributions included feature development across multiple components using C#, ASP.NET MVC, and JavaScript, as well as modernizing the technology stack by upgrading jQuery from v1.9 to v3.5.1 across various components. I also tackled critical performance challenges by analyzing SQL blocking issues with SQL Profiler and conducting root cause analysis of performance and memory issues using APM tools like Sumologic and crash dump analysis.",
-      "technologies": ["Angular", "ASP.NET MVC", "NET", "C#", "Microsoft Sql"],
+      "duration": "2019 – 2021",
+      "scope": "Product scope",
+      "tagline": "Hardening reliability and performance of customer-facing platforms",
+      "whatIOwned": [
+        "Reliability and performance improvements for Cyara's customer portal",
+        "High-availability caching architecture using Redis",
+        "Design and delivery of a micro-frontend integration for external systems"
+      ],
+      "impact": [
+        "Improved platform resilience by migrating the caching layer to Redis",
+        "Reduced production performance bottlenecks through targeted SQL and memory analysis",
+        "Enabled customers to export data seamlessly into HP Quality Centre ALM"
+      ],
+      "howIBuiltIt": ["Angular (v9)", "C#", "ASP.NET MVC", "JavaScript", "Redis", "MS SQL", "SQL Profiler", "Sumologic", "APM", "Crash dump analysis"],
+      "technicalDeepDive": "Architected and implemented a Redis-based caching layer for the main portal, significantly improving availability and response times under load.\n\nBuilt a micro-frontend application using Angular v9 that integrated Cyara's Portal with HP Quality Centre ALM, enabling customer data export workflows.\n\nModernized legacy front-end components by upgrading jQuery from v1.9 to v3.5.1 across multiple modules.\n\nDiagnosed and resolved SQL blocking and performance issues using SQL Profiler, complemented by root cause analysis with APM tools and crash dump inspection.",
       "logo": "/cyara_logo.png"
     },
     {
@@ -50,9 +74,21 @@
       "title": "Technical Lead",
       "company": "Wipro",
       "companyUrl": "https://www.wipro.com/",
-      "duration": "2017 - 2019",
-      "description": "At Wipro, I served as Technical Lead for Shell's Petrel Plugin migration project, where I successfully led a cross-functional team of five professionals including two engineers, a QA specialist, a DevOps engineer, and a Scrum Master. Based out of Bengaluru, I spearheaded the migration of legacy Petrel plugins to newer versions, ensuring seamless transitions while maintaining critical functionality for Shell's operations. Following this, I transitioned to the role of Lead Developer for Powercor, where I designed and developed complex Oracle packages, leveraging my database expertise to deliver robust data solutions for enterprise applications.",
-      "technologies": ["JavaScript", "NET"],
+      "duration": "2017 – 2019",
+      "scope": "Program scope",
+      "tagline": "Leading enterprise migrations and mentoring cross-functional teams",
+      "whatIOwned": [
+        "Technical leadership for Shell's Petrel Plugin migration program",
+        "Cross-functional team coordination across engineering, QA, DevOps, and Scrum",
+        "Database-heavy solution design for enterprise applications"
+      ],
+      "impact": [
+        "Delivered successful migration of legacy Petrel plugins to newer versions with zero critical regressions",
+        "Ensured continuity of Shell's operational workflows during major platform upgrades",
+        "Strengthened delivery velocity through clear ownership and technical guidance"
+      ],
+      "howIBuiltIt": [".NET", "JavaScript", "Oracle PL/SQL", "Enterprise data models", "Technical leadership", "Mentoring", "Stakeholder coordination"],
+      "technicalDeepDive": "Led a cross-functional team of five professionals including engineers, QA, DevOps, and a Scrum Master for Shell's Petrel Plugin migration initiative.\n\nPlanned and executed migrations of legacy plugins to newer Petrel versions, balancing modernization with strict operational constraints.\n\nTransitioned into Lead Developer role for Powercor, where I designed and implemented complex Oracle packages supporting enterprise-grade applications.\n\nActed as the primary technical point of contact, aligning delivery with client stakeholders and ensuring adherence to quality and timeline expectations.",
       "logo": "/wipro_logo.png"
     },
     {
@@ -60,9 +96,21 @@
       "title": "Technical Architect",
       "company": "Infosys",
       "companyUrl": "https://www.infosys.com/",
-      "duration": "2006 - 2017",
-      "description": "During my 11.5-year tenure at Infosys (May 2006 - November 2017), I served as Lead Developer and Architect for Schlumberger's IT transformation program, working across multiple locations including Bengaluru, Houston, and Sugarland, Texas. In this role, I was responsible for steering the design and development of REST APIs, ensuring adherence to REST API standards, reviewing pull requests, and providing guidance on API best practices. My work spanned diverse technical domains, including extensive development of Ocean for Petrel plugins for Schlumberger's Well Services division, where I led feasibility analysis and mentored junior developers. I specialized in building enterprise web and desktop applications using .NET, WPF, and Silverlight technologies, while working with databases including MS SQL and Firebird. Throughout my time at Infosys, I consistently took on leadership responsibilities including architecture design, code refactoring, configuration management, and mentoring team members on emerging frameworks and technologies",
-      "technologies": [".NET", "REST APIs", "MS SQL Server"],
+      "duration": "2006 – 2017",
+      "scope": "Enterprise scope",
+      "tagline": "Designing and scaling enterprise platforms across global teams",
+      "whatIOwned": [
+        "Architecture and development of REST APIs for Schlumberger's IT transformation program",
+        "Technical leadership across global teams in India and the United States",
+        "Mentorship and feasibility analysis for complex engineering initiatives"
+      ],
+      "impact": [
+        "Enabled scalable API-driven systems aligned with REST standards",
+        "Improved code quality and architectural consistency through PR reviews and refactoring initiatives",
+        "Built long-lived enterprise applications used across multiple Schlumberger business units"
+      ],
+      "howIBuiltIt": [".NET", "WPF", "Silverlight", "REST APIs", "MS SQL", "Firebird", "Architecture design", "Code reviews", "Mentorship"],
+      "technicalDeepDive": "Served as Lead Developer and Architect for Schlumberger's IT transformation program, working across Bengaluru, Houston, and Sugar Land, Texas.\n\nDesigned and reviewed RESTful APIs, ensuring adherence to API standards and best practices across teams.\n\nLed development of Ocean-based Petrel plugins for Schlumberger's Well Services division, including feasibility studies and architectural guidance.\n\nBuilt enterprise web and desktop applications using .NET, WPF, and Silverlight, while mentoring junior engineers and driving architectural improvements.",
       "logo": "/infosys_logo.jpg"
     }
   ],

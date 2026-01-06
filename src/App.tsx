@@ -26,8 +26,12 @@ interface ProfileData {
     company: string;
     companyUrl?: string;
     duration: string;
-    description: string;
-    technologies: string[];
+    scope: string;
+    tagline: string;
+    whatIOwned: string[];
+    impact: string[];
+    howIBuiltIt: string[];
+    technicalDeepDive: string;
     logo: string;
   }>;
   projects: Array<{

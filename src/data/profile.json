@@ -39,9 +39,9 @@
         "Technical alignment across Product, UX, and Engineering leadership"
       ],
       "impact": [
-        "Enabled large-scale feature delivery across multiple teams through shared front-end patterns",
-        "Improved user experience consistency across records management and workflow surfaces",
-        "Reduced production issues through improved observability and quality practices"
+        "🚀 Enabled large-scale feature delivery across multiple teams through shared front-end patterns",
+        "✨ Improved user experience consistency across records management and workflow surfaces",
+        "🛡️ Reduced production issues through improved observability and quality practices"
       ],
       "howIBuiltIt": ["React", "TypeScript", ".NET Core", "Azure Functions", "Blob/Table Storage", "Application Insights", "Cypress", "Postman", "Azure DevOps CI/CD", "Mentoring"],
       "technicalDeepDive": "Served as lead front-end engineer for the Nintex Tables initiative, guiding architecture decisions and implementation strategies while mentoring a team of three engineers.\n\nDesigned and implemented an AI Assistant framework using LangChain and LangGraph, enabling intelligent, context-aware user interactions within Nintex Workflow Cloud.\n\nDelivered full-stack features including RESTful APIs built with .NET Core, collaborating closely with Product Managers, UX Designers, and Staff/Principal Engineers.\n\nEstablished and enforced quality standards through comprehensive UI and API testing using Cypress and Postman, integrated into CI/CD pipelines via Azure DevOps.\n\nActively monitored and troubleshot production systems using Azure Functions, Azure Storage, and Application Insights, leveraging dashboards and metrics to maintain system health and reliability.",
@@ -61,9 +61,9 @@
         "Design and delivery of a micro-frontend integration for external systems"
       ],
       "impact": [
-        "Improved platform resilience by migrating the caching layer to Redis",
-        "Reduced production performance bottlenecks through targeted SQL and memory analysis",
-        "Enabled customers to export data seamlessly into HP Quality Centre ALM"
+        "💪 Improved platform resilience by migrating the caching layer to Redis",
+        "⚡ Reduced production performance bottlenecks through targeted SQL and memory analysis",
+        "🔄 Enabled customers to export data seamlessly into HP Quality Centre ALM"
       ],
       "howIBuiltIt": ["Angular (v9)", "C#", "ASP.NET MVC", "JavaScript", "Redis", "MS SQL", "SQL Profiler", "Sumologic", "APM", "Crash dump analysis"],
       "technicalDeepDive": "Architected and implemented a Redis-based caching layer for the main portal, significantly improving availability and response times under load.\n\nBuilt a micro-frontend application using Angular v9 that integrated Cyara's Portal with HP Quality Centre ALM, enabling customer data export workflows.\n\nModernized legacy front-end components by upgrading jQuery from v1.9 to v3.5.1 across multiple modules.\n\nDiagnosed and resolved SQL blocking and performance issues using SQL Profiler, complemented by root cause analysis with APM tools and crash dump inspection.",
@@ -83,9 +83,9 @@
         "Database-heavy solution design for enterprise applications"
       ],
       "impact": [
-        "Delivered successful migration of legacy Petrel plugins to newer versions with zero critical regressions",
-        "Ensured continuity of Shell's operational workflows during major platform upgrades",
-        "Strengthened delivery velocity through clear ownership and technical guidance"
+        "✅ Delivered successful migration of legacy Petrel plugins to newer versions with zero critical regressions",
+        "🔧 Ensured continuity of Shell's operational workflows during major platform upgrades",
+        "📈 Strengthened delivery velocity through clear ownership and technical guidance"
       ],
       "howIBuiltIt": [".NET", "JavaScript", "Oracle PL/SQL", "Enterprise data models", "Technical leadership", "Mentoring", "Stakeholder coordination"],
       "technicalDeepDive": "Led a cross-functional team of five professionals including engineers, QA, DevOps, and a Scrum Master for Shell's Petrel Plugin migration initiative.\n\nPlanned and executed migrations of legacy plugins to newer Petrel versions, balancing modernization with strict operational constraints.\n\nTransitioned into Lead Developer role for Powercor, where I designed and implemented complex Oracle packages supporting enterprise-grade applications.\n\nActed as the primary technical point of contact, aligning delivery with client stakeholders and ensuring adherence to quality and timeline expectations.",
@@ -105,9 +105,9 @@
         "Mentorship and feasibility analysis for complex engineering initiatives"
       ],
       "impact": [
-        "Enabled scalable API-driven systems aligned with REST standards",
-        "Improved code quality and architectural consistency through PR reviews and refactoring initiatives",
-        "Built long-lived enterprise applications used across multiple Schlumberger business units"
+        "🌐 Enabled scalable API-driven systems aligned with REST standards",
+        "💎 Improved code quality and architectural consistency through PR reviews and refactoring initiatives",
+        "🏗️ Built long-lived enterprise applications used across multiple Schlumberger business units"
       ],
       "howIBuiltIt": [".NET", "WPF", "Silverlight", "REST APIs", "MS SQL", "Firebird", "Architecture design", "Code reviews", "Mentorship"],
       "technicalDeepDive": "Served as Lead Developer and Architect for Schlumberger's IT transformation program, working across Bengaluru, Houston, and Sugar Land, Texas.\n\nDesigned and reviewed RESTful APIs, ensuring adherence to API standards and best practices across teams.\n\nLed development of Ocean-based Petrel plugins for Schlumberger's Well Services division, including feasibility studies and architectural guidance.\n\nBuilt enterprise web and desktop applications using .NET, WPF, and Silverlight, while mentoring junior engineers and driving architectural improvements.",

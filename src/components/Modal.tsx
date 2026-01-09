@@ -53,9 +53,11 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, content }) => {
 
         {/* Content */}
         <div className="p-6 overflow-y-auto max-h-[calc(80vh-80px)]">
-          <div className="text-slate-800 dark:text-slate-200 space-y-4 leading-relaxed whitespace-pre-line">
-            {content}
-          </div>
+          <ul className="text-slate-800 dark:text-slate-200 space-y-3 leading-relaxed list-disc list-inside">
+            {content.split('\n\n').filter(item => item.trim()).map((item, index) => (
+              <li key={index} className="ml-2">{item.trim()}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

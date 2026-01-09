@@ -4,6 +4,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import profileDataJson from './data/profile.json';
 
 interface ProfileData {
   personal: {
@@ -57,9 +58,8 @@ function App() {
   useEffect(() => {
     const loadProfileData = async () => {
       try {
-        const response = await fetch('/src/data/profile.json');
-        const data = await response.json();
-        setProfileData(data);
+        // Import the JSON data directly instead of fetching
+        setProfileData(profileDataJson as ProfileData);
       } catch (error) {
         console.error('Error loading profile data:', error);
         // Fallback data in case of error

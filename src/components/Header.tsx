@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ personal, theme, onToggleTheme }) => {
           {/* Profile Photo */}
           <div className="relative inline-block mb-6">
             <img 
-              src="/github-photo.jpeg"
+              src="/profile-pic.jpg"
               alt={`${personal.name} - Profile Photo`}
               className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-2xl border-4 border-white mx-auto ring-4 ring-blue-200/30"
             />
